@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+body {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #ebeaef;
+  background: #22262b;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  all: unset;
+}
+
+.searchButton {
+  opacity: 0.5;
+  padding: 10px;
+  margin-top: -13px;
+  z-index: 21321321;
+  margin-left: -50px;
+}
+
+input {
+  all: unset;
+  border: 1px solid #ebeaef;
+  border-radius: 100px;
+  padding: 8px;
+  opacity: 0.2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+input:hover {
+  opacity: 1;
+}
+
+input:active {
+  opacity: 1;
+}
+
+input:focus {
+  opacity: 1;
+}
+
+.alert {
+  text-align: center;
+  width: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4vh;
+}
+
+.header .city {
+  margin-top: -2vh;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.header .date {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.5;
+  margin-top: 1vh;
+}
+
+.todayInfo {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1vh;
+}
+
+.todayInfo .todayImg {
+  width: 13vh;
+}
+
+.todayInfo .todayTemp {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.todayInfo .todayConditions {
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+
+.todayDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2vh;
+}
+
+.todayDetails .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #22262b;
+  border: 1px solid #323741;
+  border-radius: 10px;
+  margin: 10px;
+  width: 100px;
+  padding: 20px 10px;
+}
+
+.todayDetails .details .detailsLabel {
+  font-size: 0.8rem;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.todayDetails .details .detailsHeader {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nextDays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+  width: 100%;
+}
+
+.nextDays .nextDay-tab {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 35% 55%;
+      grid-template-columns: 25% 35% 55%;
+  -ms-grid-rows: 7vh;
+      grid-template-rows: 7vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #22262b;
+  border: 1px solid #323741;
+  width: 360px;
+  height: auto;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nextDays .nextDay-tab .nextDay-temp {
+  margin-left: 15%;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  font-weight: bold;
+}
+
+.nextDays .nextDay-tab .nextDay-weekDay {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  opacity: 0.5;
+}
+
+.nextDays .nextDay-tab .nextDay-img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 5vh;
+  max-width: 40%;
+}
+
+.nextDays .nextDay-tab .nextDay-img-extended {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 6vh;
+  margin-top: 25px;
+  max-width: 40%;
+}
+
+.nextDays .nextDay-tab .extendedInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 120% 180% 100%;
+      grid-template-columns: 120% 180% 100%;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.nextDays .nextDay-tab .extendedInfo .extendedLabels, .nextDays .nextDay-tab .extendedInfo .extendedInfo-pressure, .nextDays .nextDay-tab .extendedInfo .extendedInfo-humidity, .nextDays .nextDay-tab .extendedInfo .extendedInfo-tempMM, .nextDays .nextDay-tab .extendedInfo .extendedInfo-wind {
+  font-size: 0.8rem;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  text-align: left;
+}
+
+.nextDays .nextDay-tab .extendedInfo .extendedInfo-pressure {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  margin-left: 15%;
+}
+
+.nextDays .nextDay-tab .extendedInfo .extendedInfo-humidity {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.nextDays .nextDay-tab .extendedInfo .extendedInfo-tempMM {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  margin-left: 15%;
+  margin-top: 5px;
+}
+
+.nextDays .nextDay-tab .extendedInfo .extendedInfo-wind {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  margin-top: 5px;
+}
+
+.nextDays .nextDay-tab .extendedInfo .extendedInfo-conditions {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  font-size: 0.8rem;
+  font-weight: 400;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: -10px;
+  opacity: 0.5;
+}
+
+.nextDays .nextDay-tab .hide {
+  display: none;
+}
+
+.nextDays .nextDay-tab:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hide {
+  display: none;
+}
+
+.showMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 5vh;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 40px;
+}
+
+::-webkit-scrollbar {
+  height: 7px;
+  border-radius: 10px;
+  background-color: #22262b;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2312px;
+  background-color: #323741;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #ebeaef;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ebeaef;
+}
+
+.nextHours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.nextHours .nextHours-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  background-color: #22262b;
+  border: 1px solid #323741;
+  margin: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.nextHours .nextHours-tab .nextHours-hour {
+  opacity: 0.5;
+  text-align: center;
+}
+
+.nextHours .nextHours-tab .nextHours-img {
+  margin-top: 10px;
+  width: 5vh;
+}
+
+.nextHours .nextHours-tab .nextHours-temp {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 350px) {
+  .nextDay-img-extended {
+    margin-bottom: -30px;
+  }
+  .extendedInfo-conditions {
+    display: none;
+  }
+  .details {
+    height: 11vh;
+  }
+}
+
+@media (min-width: 854px) {
+  .mainPage .nextHours {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .mainPage .col2 .nextDays .nextDay-tab {
+    background-color: #22262b;
+    border: 1px solid #323741;
+    cursor: auto;
+  }
+  .mainPage .col2 .nextDays .nextDay-tab .nextDay-img {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 6vh;
+    margin-top: 25px;
+    max-width: 40%;
+  }
+  .mainPage .col2 .nextDays .hide {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media (min-width: 1050px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .showMore:hover {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  .nextDays {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .nextDays .nextDay-tab:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+
+@media (min-width: 1366px) {
+  .mainPage {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 700px 510px 510px;
+        grid-template-columns: 700px 510px 510px;
+    -ms-grid-rows: 70% 30%;
+        grid-template-rows: 70% 30%;
+        grid-template-areas: "today week week" "footer footer footer";
+  }
+  .mainPage .col1 {
+    margin-top: 20px;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    border: 1px solid #323741;
+    padding: 77px 40px;
+    border-radius: 15px;
+    width: 60%;
+  }
+  .mainPage .col1 .header {
+    margin-top: 0;
+  }
+  .mainPage .nextHours {
+    grid-row-start: 2;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: footer;
+  }
+  .mainPage .col2 {
+    margin-left: 10px;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .mainPage .col2 .showMore {
+    display: none;
+  }
+  .mainPage .col2 .nextDays {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .mainPage .col2 .nextDays .nextDay-tab {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    background-color: #22262b;
+    border: 1px solid #323741;
+    cursor: auto;
+    margin: 10px;
+  }
+  .mainPage .col2 .nextDays .nextDay-tab .nextDay-img {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 6vh;
+    margin-top: 25px;
+    max-width: 40%;
+  }
+  .mainPage .col2 .hide {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+/*# sourceMappingURL=style.css.map */
