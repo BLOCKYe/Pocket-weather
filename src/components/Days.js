@@ -5,7 +5,7 @@ const Days = props => {
     const weekDay = () => {
         let today = new Date()
         const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-        const iter = props.element.dayInRow
+        const iter = props.element.dayInRow-1
         const day = ((today.getDay() + iter) > 6 ? weekDays[today.getDay() + iter - 7] : weekDays[today.getDay() + iter])
         return day
     }

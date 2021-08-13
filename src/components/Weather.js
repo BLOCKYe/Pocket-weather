@@ -135,7 +135,7 @@ class Weather extends React.Component {
                 //get daily data
                 const clear = []
                 this.setState({ days: clear });
-                for (let i = 0; i < 6; i++) {
+                for (let i = 1; i < 7; i++) {
                     let day = {
                         dayInRow: i,
                         temp: Math.round(response.daily[i].temp.day),
